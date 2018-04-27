@@ -10,7 +10,7 @@
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
 .rotate {
     border: none;
@@ -18,7 +18,8 @@
     box-shadow: 0 0 0px transparent !important;
     -webkit-animation: rotationAnim 6s infinite linear
 }
-.reveal pre{
+
+.reveal pre {
     display: block;
     position: relative;
     width: 90%;
@@ -28,22 +29,27 @@
     font-family: monospace;
     line-height: 1.2em;
     word-wrap: break-word;
-    box-shadow:none;
+    box-shadow: none;
 }
 
 .left {
-    left:-8.33%;
+    left: -8.33%;
     text-align: left;
     float: left;
-    width:50%;
-    z-index:-10;
-  }
-  
-  .right {
-    left:31.25%;
+    width: 50%;
+    z-index: -10;
+}
+
+.right {
+    left: 31.25%;
     top: 75px;
     float: right;
     text-align: right;
-    z-index:-10;
-    width:50%;
-  }
+    z-index: -10;
+    width: 50%;
+}
+
+.clearImg {
+    border: none !important;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0) !important;
+}

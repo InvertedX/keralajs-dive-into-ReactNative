@@ -7,7 +7,6 @@
 	<title>Intoduction to react native</title>
 
 	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -56,6 +55,16 @@
 			</section>
 
 
+			<section data-background-transition="zoom">
+				<h4>Agenda</h1>
+					<ol>
+						<li>React Concepts</li>
+						<li>Introduction to React Native</li>
+						<li>Build an app from ground up using RN</li>
+					</ol>
+			</section>
+
+
 			<section>
 				<section>
 					<img width="180px" src="./imgs/react-native-logo-3b38fe0f8005ff45-512x512.png" style="border: none;background-color:transparent">
@@ -64,6 +73,9 @@
 						React Native lets you build mobile apps using only JavaScript. It uses the same design as React, letting you compose a rich
 						mobile UI from declarative components.
 					</small>
+				</section>
+				<section>
+					<img src="./imgs/b5eabad5cb31eeb80e87ec114c2b0cf8.jpg" alt="">
 				</section>
 				<section data-transition="slide" data-background-transition="convex">
 					<h5>Existing Hybrid Solutions</h2>
@@ -78,6 +90,7 @@
 				<section>
 					<h4>Why React Native then ?</h2>
 						<ul>
+							<li class="fragment">No Webviews</li>
 							<li class="fragment">Faster to Build</li>
 							<li class="fragment">One Framework, Multiple Platforms
 								<i>(Kinda)</i>
@@ -132,13 +145,9 @@
 						we can traverse trees fairly easily. Unfortunately, easily doesn’t mean quickly here.
 					</aside>
 					<h4>THe Virtual DOM</h4>
-						<img src="./imgs/Frame.svg">
+					<img src="./imgs/vdom.png">
 				</section>
-				<section>
-					<iframe id="sandbox" src="https://codesandbox.io/embed/23xq511plj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-					    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-					<button type="button" onclick="zoomtoCode()">Come Closer</button>
-				</section>
+
 				<section>
 					<h4 style="color: #61dafb">A Simple Component</h2>
 						<pre>
@@ -157,7 +166,11 @@
 
 				</section>
 
-
+				<section>
+					<iframe id="sandbox" src="https://codesandbox.io/embed/23xq511plj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+					    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button type="button" onclick="zoomtoCode('sandbox')">Come Closer</button>
+				</section>
 
 				<section>
 					<h4 style="color: #61dafb">JSX
@@ -210,25 +223,129 @@
 
 				</section>
 
+				<section>
+
+					<iframe id="sandbox2" src="https://codesandbox.io/embed/jvor3myw29" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+					    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button type="button" onclick="zoomtoCode('sandbox2')">Come Closer</button>
+
+				</section>
+
 			</section>
+			<section>
+
+				<section>
+					<img width="180px" src="./imgs/react-native-logo-3b38fe0f8005ff45-512x512.png" style="border: none;background-color:transparent">
+					<h3>Intoduction to React native</h3>
+				</section>
+				<section>
+					<h6>React Native architecture</h5>
+						<img class="clearImg" src="./imgs/rn_arch.png" alt="">
+				</section>
+				<section>
+					<h6>Virtual DOM in React Native</h5>
+						<img class="clearImg" src="./imgs/v-dom-rn.png" alt="">
+				</section>
+
+				<section>
+					<h6>Components</h5>
+						<p style="color:aqua">Generic Components (Works both on IOS and Android)</p>
+						<ol>
+							<li>View</li>
+							<li>Text</li>
+							<li>Image</li>
+							<li>TouchableOpacity</li>
+							<li>FlatList</li>
+							<li>SectionList</li>
+							<li>ListView</li>
+							<li>etc...</li>
+						</ol>
+				</section>
+				<section>
+					<h6>Components</h5>
+						<p style="color:aqua">Android Specific</p>
+						<ol>
+							<li>ToolbarAndroid</li>
+							<li>TimePickerAndroid</li>
+							<li>TouchableNativeFeedback</li>
+							<li>etc...</li>
+						</ol>
+				</section>
+				<section>
+					<h6>Components</h5>
+						<p style="color:aqua">IOS Specific</p>
+						<ol>
+							<li>TabBarIOS</li>
+							<li>NavigatorIOS</li>
+							<li>DatePickerIOS</li>
+							<li>etc...</li>
+						</ol>
+				</section>
+				<section>
+					<p style="color:deepskyblue">We can import them by</p>
+					<pre>
+  <code style="font-size: 26px">import {View,Text,FlatList,SectionList} from 'react-native'</code>
+					 </pre>
+				</section>
+				<section>
+					<p style="color:deepskyblue">We can import them by</p>
+					<pre>
+<code style="font-size: 26px">import {View,Text,FlatList,SectionList} from 'react-native'</code>
+				   </pre>
+				</section>
 
 
+				<section style="text-align: center">
+					<pre>
+  <code style="font-size: 32px">npm install -g react-native-cli</code>	
+					 </pre>
+					<pre class="fragment  fade-up">
+						<p>Create new project</p>
+						 <code style="font-size: 32px">react-native init AwesomeProject</code>
+					   </pre>
+				</section>
 
+				<section>
+					<h6>Directory structure</h6>
+					<img class="clearImg" src="./imgs/directory.PNG" alt="">
+				</section>
+
+				<section>
+					<h6>Loading component</h6>
+					<pre>
+<code>import { AppRegistry } from 'react-native'
+import App from './App';
+
+AppRegistry.registerComponent('App', () => App)</code>
+				</pre>
+				</section>
+
+				<section>
+					<h5>Layout Using FlexBox</h5>
+				</section>
+
+
+				<section>
+					<h5>Handling Touch</h5>
+
+				</section>
+
+			</section>
 
 
 
 			<section>
-				<section>
-					<h2>Intoduction to React native</h2>
-				</section>
-				<section>
-					<ul>
-						<li>Handling Touch</li>
-						<li>Native Components</li>
-						<li>Styles and Layouts</li>
-					</ul>
-				</section>
+				<h5>Lets build a TODO App</h5>
+
+
 			</section>
+
+			<section>
+					<h5>Thank you...</h5>
+	
+			</section>
+	
+			
 		</div>
 	</div>
 
@@ -236,11 +353,11 @@
 	<script src="./node_modules/reveal.js/js/reveal.js"></script>
 
 	<script>
-		function zoomtoCode() {
+		function zoomtoCode(id) {
 
 			zoom.to({
-				element: document.getElementById('sandbox'),
-				padding: 0
+				element: document.getElementById(id),
+				padding: 0,
 			});
 
 
@@ -251,9 +368,7 @@
 			progress: true,
 			history: true,
 			center: true,
-
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
-
 			// More info https://github.com/hakimel/reveal.js#dependencies
 			dependencies: [{
 					src: './node_modules/reveal.js/lib/js/classList.js',
